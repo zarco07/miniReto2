@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "910148D5FC007F8B915A8209099E2AC82059CA0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "642D1A25FBCE25F80E91A834AFE8546E5416EAB5" : 0,
+    "910148D5FC007F8B915A8209099E2AC82059CA0E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "49BA42EB-59AB-4B0B-8C5C-2B9862D554D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "642D1A25FBCE25F80E91A834AFE8546E5416EAB5" : "..",
+    "910148D5FC007F8B915A8209099E2AC82059CA0E" : "miniReto2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "miniReto2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "miniReto2.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zarco07\/miniReto1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "642D1A25FBCE25F80E91A834AFE8546E5416EAB5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zarco07\/miniReto2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "910148D5FC007F8B915A8209099E2AC82059CA0E"
+    }
+  ]
+}

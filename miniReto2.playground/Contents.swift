@@ -17,12 +17,65 @@ enum Velocidades:Int {
 
 class Auto {
     var velocidad : Velocidades
+    var aumenta : Bool?
     
     init(velocidad : Velocidades){
-        self.velocidad = Velocidades.Apagado
+        //self.aumenta = true
+        self.velocidad = Velocidades(velocidadInicial: Velocidades.Apagado)
+
     }
     
     func cambioDeVelocidad() -> (actual : Int, velocidadEnCadena : String) {
-        velocidad =
+        var texto :String
+        if aumenta == true {
+            switch velocidad {
+            case .Apagado:
+                velocidad = .VelocidadBaja
+                texto = "Velocidad Baja"
+            case  .VelocidadBaja:
+                velocidad = .VelocidadMedia
+                texto = "Velocidad Media"
+            case .VelocidadMedia:
+                velocidad = .VelocidadAlta
+                texto = "Velocidad Alta"
+            case .VelocidadAlta:
+                velocidad = .VelocidadMedia
+                texto = "Velocidad Media"
+                aumenta = false
+            }
+        }
+        else if aumenta == nil {
+            velocidad = .Apagado
+            texto = "Apagado"
+            aumenta = true
+        }
+        else{
+            switch velocidad {
+            case .Apagado:
+                velocidad = .VelocidadBaja
+                texto = "Velocidad Baja"
+                aumenta = true
+            case  .VelocidadBaja:
+                velocidad = .Apagado
+                texto = "Apagado"
+            case .VelocidadMedia:
+                velocidad = .VelocidadBaja
+                texto = "Velocidad Baja"
+            case .VelocidadAlta:
+                velocidad = .VelocidadMedia
+                texto = "Velocidad Media"
+            }
+            }
+        return (velocidad.rawValue, texto)
     }
 }
+
+var auto : Auto = Auto.init(velocidad: .Apagado)
+
+
+
+for i in 1...20{
+    
+    print(auto.cambioDeVelocidad())
+}
+
